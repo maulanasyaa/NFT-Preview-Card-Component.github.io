@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* container */
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 250px;
+  padding: 0.8em;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* image */
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+}
+
+.image div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image:hover div {
+  background-image: url(components/images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsla(178, 100%, 50%, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* text area */
+
+.text-area .text-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 15px 0;
+}
+
+.text-area .text-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.text-area .text-paragraph {
+  font-size: 0.75em;
+  font-weight: 300;
+  color: rgb(124, 149, 181);
+  margin-bottom: 15px;
+}
+
+/* icon */
+
+.icon,
+.icon-eth,
+.icon-clock {
+  display: flex;
+}
+
+.icon {
+  font-size: 0.75em;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid hsla(215, 31%, 82%, 0.1);
+}
+
+.icon-eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.icon-clock {
+  color: rgb(124, 149, 181);
+}
+
+.icon svg {
+  margin-right: 5px;
+}
+
+/* profile */
+
+.profile {
+  width: 100%;
+  margin: 15px 0 5px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile img {
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile p {
+  font-size: 0.7em;
+  color: rgb(124, 149, 181);
+}
